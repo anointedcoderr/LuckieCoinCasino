@@ -65,7 +65,7 @@ export default function PlayerDashboard() {
         />
         <div className="glass rounded-3xl p-6 shadow-card">
           <p className="font-display text-base font-semibold text-ink">Quick actions</p>
-          <div className="mt-4 grid grid-cols-2 gap-3">
+          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <Button to="/games/slots" variant="secondary" icon={Cherry} fullWidth>
               Play Slots
             </Button>

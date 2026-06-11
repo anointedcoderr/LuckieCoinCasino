@@ -78,7 +78,7 @@ export default function Login() {
 
         <div className="mt-6">
           <p className="text-center font-mono text-[10px] uppercase tracking-wider text-muted">Quick access</p>
-          <div className="mt-3 grid grid-cols-2 gap-3">
+          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <button
               onClick={() => enter('player')}
               className="glass lift-on-hover flex items-center justify-center gap-2 rounded-xl border border-white/10 px-3 py-2.5 text-sm text-ink"

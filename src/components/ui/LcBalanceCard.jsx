@@ -25,7 +25,7 @@ export default function LcBalanceCard({
     >
       <div className="grid-bg absolute inset-0 opacity-30" />
       <div className="relative flex items-start justify-between gap-4">
-        <div>
+        <div className="min-w-0">
           <p className="font-mono text-[11px] uppercase tracking-wider text-primary/80">
             {compact ? 'Your club balance' : `${avatarName ? avatarName + ', ' : ''}your LuckieCoin balance`}
           </p>
@@ -35,7 +35,7 @@ export default function LcBalanceCard({
           </div>
         </div>
         {tier && (
-          <span className="rounded-full border border-primary/30 bg-deep/40 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-primary-light">
+          <span className="shrink-0 rounded-full border border-primary/30 bg-deep/40 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-primary-light">
             {tier}
           </span>
         )}

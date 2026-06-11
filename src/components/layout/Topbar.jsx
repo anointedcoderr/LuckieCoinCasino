@@ -39,11 +39,11 @@ export default function Topbar({ variant = 'player', onMenu, onCommand }) {
 
   return (
     <header className="glass sticky top-0 z-40 flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3 sm:px-6 lg:px-10">
-      <div className="flex items-center gap-3">
-        <button onClick={onMenu} className="text-ink lg:hidden" aria-label="Open menu">
+      <div className="flex min-w-0 items-center gap-3">
+        <button onClick={onMenu} className="shrink-0 text-ink lg:hidden" aria-label="Open menu">
           <Menu className="h-6 w-6" />
         </button>
-        <h1 className="font-display text-lg font-semibold text-ink sm:text-xl">{title}</h1>
+        <h1 className="min-w-0 truncate font-display text-lg font-semibold text-ink sm:text-xl">{title}</h1>
       </div>
       <div className="flex items-center gap-3 sm:gap-4">
         {variant === 'admin' && onCommand && (
